@@ -22,6 +22,7 @@ module Creek
       @rid = rid
       @state = state
       @sheetfile = sheetfile
+      @index = sheetfile.tr("^0-9","").to_i
       @images_present = false
     end
 
